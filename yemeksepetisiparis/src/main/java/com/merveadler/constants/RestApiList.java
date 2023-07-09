@@ -18,4 +18,6 @@ public class RestApiList {
     public static final String FIND_ALL_RESTAURANTS_ORDER = "/find-all-restaurants-order";
     public static final String GET_RESTAURANTS_PRODUCT = "/get-restaurants-product";
     public static final String UPDATE = "/update";
+    public static final String SAVE = "/save";
+    public static final String FIND_ALL_RESTAURANT_ORDER = "/findAllRestaurantOrder";
 }
