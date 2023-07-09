@@ -1,26 +1,24 @@
-package com.merveadler.repository.Entity;
-
+package com.merveadler.repository.entity;
 import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "tbl_orders")
+@Table(name="tbl_products")
 @Entity
-public class Order {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     Long restaurantid;
-    Long customerid;
-    Long productid;
-    LocalDate date;
+    String name;
+    String category;
+    Long cost;
+
 }

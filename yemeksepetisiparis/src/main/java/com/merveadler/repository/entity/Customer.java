@@ -1,4 +1,4 @@
-package com.merveadler.repository.Entity;
+package com.merveadler.repository.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table
+@Table(name="tbl_customers")
 @Entity
 public class Customer {
     @Id
@@ -26,4 +26,8 @@ public class Customer {
     String verificationCode;
     Long balance;
     int status ;
+
+    private String activationCode;
+
+
 }

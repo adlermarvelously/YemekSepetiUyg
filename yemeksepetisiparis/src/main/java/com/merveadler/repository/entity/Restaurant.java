@@ -1,4 +1,4 @@
-package com.merveadler.repository.Entity;
+package com.merveadler.repository.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

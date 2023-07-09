@@ -23,7 +23,8 @@ public enum ErrorType {
 
     ID_NOT_FOUND(1001,"Aradığınız id'ye ait kayıt bulunamamıştır.",HttpStatus.BAD_REQUEST),
     BRANS_ZATEN_KAYITLI(2001,"Bu branş zaten kayıtlı.",HttpStatus.BAD_REQUEST),
-    INVALID_TOKEN(1002,"Geçersiz token",HttpStatus.BAD_REQUEST);
+    INVALID_TOKEN(1002,"Geçersiz token",HttpStatus.BAD_REQUEST),
+    ERROR(9000, "Beklenmeyen bir hata oluştur. Lütfen tekrar deneyiniz.", HttpStatus.INTERNAL_SERVER_ERROR);
     int code;
     String message;
     HttpStatus httpStatus;
